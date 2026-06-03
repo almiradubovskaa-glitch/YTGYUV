@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - МБОУ СОШ №35</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo"><div class="logo-icon">35</div><div class="logo-text"><h1>МБОУ г.Астрахани «СОШ №35»</h1><p>Образование. Развитие. Успех.</p></div></div>
+                <div class="burger"><div></div><div></div><div></div></div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="about.html" class="nav-link">Общие сведения</a></li>
+                    <li><a href="students.html" class="nav-link">Обучающимся</a></li>
+                    <li><a href="parents.html" class="nav-link">Родителям</a></li>
+                    <li><a href="teachers.html" class="nav-link">Педагогам</a></li>
+                    <li><a href="management.html" class="nav-link">Руководство</a></li>
+                    <li><a href="contacts.html" class="nav-link active">Контакты</a></li>
+                </ul>
+                <button class="btn-request open-modal">Подать заявку</button>
+            </nav>
+        </div>
+        <div class="hero" style="padding: 40px 0;"><div class="container"><h2>Контакты</h2></div></div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="two-columns">
+                <aside class="sidebar-menu">
+                    <h3>Контакты</h3>
+                    <ul class="sidebar-list">
+                        <li><a href="#">Администрация</a></li>
+                        <li><a href="#">Приемная комиссия</a></li>
+                        <li><a href="#">Бухгалтерия</a></li>
+                    </ul>
+                </aside>
+                <div class="main-content">
+                    <h1>Контактная информация</h1>
+                    <p><strong>Адрес:</strong> 414046, г. Астрахань, ул. Химиков, д. 5, корпус 1</p>
+                    <p><strong>Телефон:</strong> +7 (8512) 57-60-11</p>
+                    <p><strong>Email:</strong> school35@astr.ru</p>
+                    <p><strong>Режим работы:</strong> Пн-Пт: 08:00 - 18:00, Сб: 09:00 - 14:00</p>
+                    
+                    <h3 style="margin-top: 30px;">Как добраться</h3>
+                    <p>Остановка общественного транспорта "Школа №35" находится в 2 минутах ходьбы.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <p>Телефон: +7 (8512) 57-60-11</p>
+                    <p>Email: school35@astr.ru</p>
+                    <p>Адрес: г. Астрахань, ул. Химиков, д. 5, корпус 1</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Режим работы</h4>
+                    <p>Пн-Пт: 08:00 - 18:00</p>
+                    <p>Сб: 09:00 - 14:00</p>
+                    <p>Вс: выходной</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Полезные ссылки</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://edu.gov.ru" target="_blank">Министерство просвещения РФ</a></li>
+                        <li><a href="https://www.astrobl.ru/obrazovanie" target="_blank">Образование в Астрахани</a></li>
+                        <li><a href="https://www.gosuslugi.ru" target="_blank">Госуслуги</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 МБОУ г.Астрахани «СОШ №35». Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="requestModal" class="modal"><div class="modal-content"><span class="modal-close">&times;</span><h3>Подать заявку</h3><form id="requestForm"><div class="form-group"><label>ФИО *</label><input type="text" required></div><div class="form-group"><label>Телефон *</label><input type="tel" required></div><div class="form-group"><label>Email</label><input type="email"></div><div class="form-group"><label>Цель заявки *</label><select required><option>Запись в 1 класс</option><option>Запись в кружок</option><option>Другое</option></select></div><button type="submit" class="btn btn-primary">Отправить</button></form></div></div>
+    <div id="feedbackModal" class="modal"><div class="modal-content"><span class="modal-close" id="closeFeedbackModal">&times;</span><h3>Обращение граждан</h3><form id="feedbackFormElement"><div class="form-group"><label>ФИО *</label><input type="text" required></div><div class="form-group"><label>Email или телефон *</label><input type="text" required></div><div class="form-group"><label>Тема *</label><select required><option>Вопрос по обучению</option><option>Питание</option><option>Предложение</option></select></div><div class="form-group"><label>Сообщение *</label><textarea rows="4" required></textarea></div><button type="submit" class="btn btn-primary">Отправить</button></form></div></div>
+    <div id="newsModal" class="modal"><div class="modal-content modal-lg"><span class="modal-close" id="closeNewsModal">&times;</span><h3 id="newsModalTitle"></h3><div class="news-date" id="newsModalDate"></div><img id="newsModalImg" class="modal-img" src="" alt=""><p id="newsModalText"></p></div></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
